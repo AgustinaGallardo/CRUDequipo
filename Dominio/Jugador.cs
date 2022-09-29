@@ -10,16 +10,18 @@ namespace CRUDequipo.Dominio
     {
         public Persona Persona { get; set; }        
         public string Camiseta { get; set; }
+        public TipoPosicion Tipo { get; set; }
         public Jugador()
         {
             Persona = new Persona();            
             Camiseta = string.Empty;
+            Tipo = new TipoPosicion();
         }
-        public Jugador(Persona per,TipoPosicion tipo,string cam)
+        public Jugador(Persona per,TipoPosicion tipo,string cam, TipoPosicion tip)
         {
             Persona = per;
-         
             Camiseta = cam;
+            Tipo = tip;
         }
 
         public override string ToString()

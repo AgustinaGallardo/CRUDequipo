@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CRUDequipo.Servicios.Intefaz
+namespace CRUDequipo.Datos.Interfaz
 {
-    internal interface IServicio
+    internal interface IDaoEquipo
     {
         int ObtenerProximo();
     }

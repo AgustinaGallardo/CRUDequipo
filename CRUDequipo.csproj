@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Datos\Helper.cs" />
+    <Compile Include="Datos\Implementacion\DaoEquipo.cs" />
+    <Compile Include="Datos\Interfaz\IDaoEquipo.cs" />
     <Compile Include="Datos\Parametro.cs" />
     <Compile Include="Dominio\Equipo.cs" />
     <Compile Include="Dominio\Jugador.cs" />
@@ -88,8 +90,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Datos\Interfaz\Implementacion\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
