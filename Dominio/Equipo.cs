@@ -25,5 +25,19 @@ namespace CRUDequipo.Dominio
         {
             return Nombre;
         }
+
+        public void AgregarJugador(Jugador j)
+        {
+            LstJugadores.Add(j);
+        }
+        public int CalcularTotal()
+        {
+            int total = 0;
+            foreach(Jugador item in LstJugadores)
+            {
+                total++;
+            }
+            return total;
+        }
     }
 }

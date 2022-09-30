@@ -17,11 +17,11 @@ namespace CRUDequipo.Dominio
             Camiseta = string.Empty;
             Tipo = new TipoPosicion();
         }
-        public Jugador(Persona per,TipoPosicion tipo,string cam, TipoPosicion tip)
+        public Jugador(Persona per,TipoPosicion tipo,string cam)
         {
             Persona = per;
             Camiseta = cam;
-            Tipo = tip;
+            Tipo = tipo;
         }
 
         public override string ToString()
